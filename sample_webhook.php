@@ -25,5 +25,5 @@ $text = $jsonObj->{"events"}[0]->{"message"}->{"text"};
 //ReplyToken取得
 $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 
-$textMessageBuilder = new TextMessageBuilder('hello world');
+$textMessageBuilder = new TextMessageBuilder('たのしー');
 $bot->replyMessage($replyToken, $textMessageBuilder);
